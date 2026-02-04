@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+
+<div class="row">
+  <div class="col-lg-7">
+    <div class="card border-0 shadow-sm mb-4">
+      <div class="card-body">
+        <h4 class="fw-bold mb-3">Importar arquivo do Mockaroo</h4>
+        <p class="text-muted">Faça upload de CSV ou JSON (array). O sistema valida o conteúdo e importa no MySQL.</p>
+        <form id="importForm" class="upload-area" enctype="multipart/form-data">
+          <input type="file" id="fileInput" name="file" accept=".csv,.json" hidden />
+          <div class="upload-box text-center" id="dropZone">
+            <p class="fw-semibold mb-1">Arraste e solte seu arquivo aqui</p>
+            <p class="text-muted small">ou clique para selecionar</p>
+            <button type="button" class="btn btn-outline-primary">Selecionar arquivo</button>
+          </div>
+          <div class="mt-3">
+            <button type="submit" class="btn btn-primary">Importar dados</button>
+          </div>
+        </form>
+        <div id="importAlert" class="alert mt-3 d-none"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body">
+        <h5 class="fw-bold">Pré-visualização</h5>
+        <p class="text-muted small">Veja as primeiras 10 linhas antes de importar.</p>
+        <div class="table-responsive" style="max-height: 320px;">
+          <table class="table table-sm table-striped" id="previewTable">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="text-muted small">Dica: arquivos grandes podem demorar alguns segundos para importar.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="/js/import.js"></script>
+
+<%- include('partials/footer') %>
