@@ -1,0 +1,31 @@
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.hero-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5ff 100%);
+}
+
+.upload-area .upload-box {
+  border: 2px dashed #7aa7ff;
+  border-radius: 16px;
+  padding: 36px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.upload-area .upload-box.dragover {
+  background-color: #eef4ff;
+}
+
+table pre {
+  white-space: pre-wrap;
+  max-width: 420px;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  table pre {
+    max-width: 240px;
+  }
+}

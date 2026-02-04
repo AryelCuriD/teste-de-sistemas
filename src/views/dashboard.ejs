@@ -1,0 +1,60 @@
+<%- include('partials/header') %>
+
+<div class="d-flex align-items-center justify-content-between mb-4">
+  <div>
+    <h3 class="fw-bold">Dashboard</h3>
+    <p class="text-muted">Métricas rápidas sobre os dados importados.</p>
+  </div>
+  <a href="/import" class="btn btn-outline-primary">Importar mais dados</a>
+</div>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-4">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body">
+        <p class="text-muted mb-1">Total de registros</p>
+        <h3 class="fw-bold" id="metricTotal">0</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body">
+        <p class="text-muted mb-1">Importados hoje</p>
+        <h3 class="fw-bold" id="metricToday">0</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body">
+        <p class="text-muted mb-1">Última atualização</p>
+        <h6 class="fw-bold" id="metricLast">-</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-lg-8">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body">
+        <h5 class="fw-bold">Registros por dia</h5>
+        <canvas id="dailyChart" height="140"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card border-0 shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="fw-bold">Últimos importados</h5>
+        <ul class="list-group list-group-flush" id="recentList"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/js/dashboard.js"></script>
+
+<%- include('partials/footer') %>
