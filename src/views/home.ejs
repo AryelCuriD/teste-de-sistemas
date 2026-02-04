@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+
+<section class="hero-card bg-white shadow-sm rounded-4 p-5 mb-4">
+  <div class="row align-items-center">
+    <div class="col-lg-7">
+      <p class="text-uppercase text-primary fw-semibold">Ferramenta de teste de banco</p>
+      <h1 class="display-6 fw-bold mb-3">Importe dados do Mockaroo direto para o MySQL</h1>
+      <p class="text-muted fs-5">Teste sua base rapidamente com dados realistas, visualize registros e acompanhe métricas em minutos.</p>
+      <a href="/import" class="btn btn-primary btn-lg me-2">Importar agora</a>
+      <a href="/records" class="btn btn-outline-primary btn-lg">Ver registros</a>
+    </div>
+    <div class="col-lg-5 mt-4 mt-lg-0">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <h5 class="fw-bold">Passos rápidos</h5>
+          <ol class="text-muted">
+            <li>Gerar dados no Mockaroo</li>
+            <li>Baixar CSV ou JSON (array)</li>
+            <li>Importar aqui e visualizar no MySQL</li>
+          </ol>
+          <div class="alert alert-info mb-0">Exporte como CSV ou JSON (array) para garantir a leitura.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="row g-4">
+  <div class="col-md-4">
+    <div class="card border-0 shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Upload simplificado</h5>
+        <p class="card-text text-muted">Envie arquivos CSV/JSON de até 5MB. O sistema valida e organiza tudo automaticamente.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card border-0 shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Visualização completa</h5>
+        <p class="card-text text-muted">Veja os registros em tabela, busque por termos e abra o detalhe com um clique.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card border-0 shadow-sm h-100">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Dashboard inteligente</h5>
+        <p class="card-text text-muted">Acompanhe métricas simples e um gráfico de registros dos últimos dias.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

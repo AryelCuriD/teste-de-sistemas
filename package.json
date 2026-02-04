@@ -1,0 +1,31 @@
+{
+  "name": "mockaroo-db-tester",
+  "version": "1.0.0",
+  "description": "Ferramenta de teste de banco de dados com importação Mockaroo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "mockaroo",
+    "mysql",
+    "express",
+    "import",
+    "csv",
+    "json"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^5.5.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
